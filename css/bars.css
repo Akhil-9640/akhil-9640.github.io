@@ -1,0 +1,104 @@
+.progress_bar .pro-bar {
+    background: hsl(0, 0%, 97%);
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+    height: 4px;
+    margin-bottom: 12px;
+    margin-top: 50px;
+    position: relative
+}
+
+.progress_bar .progress_bar_title {
+    color: hsl(218, 4%, 50%);
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+    top: -28px;
+    z-index: 1
+}
+
+.progress_bar .progress_number {
+    float: right
+}
+
+.progress_bar .progress-bar-inner {
+    background-color: hsl(0, 0%, 88%);
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 1s linear 0s
+}
+
+.progress_bar .progress-bar-inner:before {
+    content: "";
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    z-index: 1
+}
+
+.progress_bar .progress-bar-inner:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: -5px
+}
+
+.bg-gradient1 span,
+.bg-gradient1:before {
+    background: #004e92;
+    background: linear-gradient(to right, #004e92, #3a7bd5, #2196f3);
+}
+
+.fancy-button {
+    display: inline-block;
+    margin: 15px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+}
+
+.fancy-button i {
+    margin-top: -1px;
+    margin-right: 5px;
+    font-size: 1.265em;
+    vertical-align: middle;
+}
+
+.fancy-button span {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    will-change: transform, filter;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-out;
+}
+
+.fancy-button:focus,
+.fancy-button:active {
+    color: #ffffff;
+}
+
+.fancy-button:hover {
+    color: #ffffff;
+}
+
+.fancy-button:hover span {
+    filter: brightness(1.05) contrast(1.05);
+    transform: scale(0.95);
+}
